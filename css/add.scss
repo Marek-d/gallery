@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1920px;
+    min-height: 100vh;
+    background: #0000008F 0% 0% no-repeat padding-box;
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// ***** ADD CATEGORY SITE *****
+
+.add-gallery {
+    // display: none;
+    width: 35em;
+    background-color: #FFF;
+    border-radius: 1em;
+    padding: 3em;
+
+    .add-gallery-heading {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    svg {
+        width: 1.5em;
+        height: 1.5em;
+        cursor: pointer;
+    }
+
+    span {
+        position: relative;
+        top: 3.4em;
+        left: 1em;
+        padding: 0 0.5em;
+        font-size: 0.875em;
+        background-color: #fff;
+    }
+
+    .input-text {
+        width: 100%;
+        padding: 1em 1.2em;
+        margin-top: 3em;
+        border: 1px solid #DDD;
+        box-shadow: 0 1px 2px #00000014;
+        border-radius: 0.25em;
+    }
+
+    .input-text:focus {
+        outline: none;
+    }
+
+    input[type="button"] {
+        width: 100%;
+        padding: 1em;
+        margin-top: 1.5em;
+        background-color: #000;
+        border-radius: 0.25em;
+        color: #FFF;
+        cursor: pointer;
+    }
+}
+
+// ***** ADD IMAGES SITE *****
+
+.add-image {
+    width: 35em;
+    background-color: #FFF;
+    border-radius: 1em;
+    padding: 3em;
+
+    .add-image-heading {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    svg {
+        width: 1.5em;
+        height: 1.5em;
+        cursor: pointer;
+    }
+
+    .choose-file {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+
+        padding: 3em 0;
+        margin-top: 1.75em;
+        border: 1px dashed #DDD;
+        border-radius: 0.25em;
+        
+        .image-icon {
+            cursor: default;
+        }
+
+        span {
+            font-weight: bolder;
+            
+            &.or {
+                opacity: 0.56;
+                font-weight: normal;
+            }
+        }
+
+        .choose-file-btn {
+            border: 2px solid #000;
+            border-radius: 0.25em;
+            padding: 0.875em 2em;
+            margin-top: 0.4em;
+            background-color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    }
+
+    .add-file-btn {
+        width: 100%;
+        padding: 1.375em;
+        margin-top: 1.5em;
+
+        background-color: #000;
+        border-radius: 0.25em;
+        
+        color: #FFF;
+        font-size: 1em;
+        cursor: pointer;
+    }
+}
+
+
+// ***** image.html *****
+
+.image {
+    width: 57.3%;
+    height: 85vh;
+    margin: 0 auto;
+    background-image: url("../images/arch3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    svg {
+        width: 3em;
+        height: 3em;
+        background-color: #FFF;
+        border-radius: 50%;
+        padding: 1em;
+        box-shadow: 0 4px 1.5em #00000014;
+        cursor: pointer;
+
+        &.cross-icon {
+            position: absolute;
+            left: 93%;
+            top: 1.5em;
+
+            background-color: #000000;
+            opacity: 0.56;
+            fill: #FFF;
+        }
+    }
+
+    .arrows {
+        display: flex;
+        justify-content: space-between;
+
+        .arrow-left {
+            transform: translateX(-50%);
+        }
+
+        .arrow-right {
+            transform: translateX(50%);
+        }
+    }
+}
