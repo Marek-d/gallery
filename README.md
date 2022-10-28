@@ -1,10 +1,10 @@
 # photo gallery
 
 - subpages
-  -- /add_category.html
-  -- /add_images.html
-  -- /gallery.html
-  -- /image.html
+  - /add_category.html
+  - /add_images.html
+  - /gallery.html
+  - /image.html
 
 Stránka je dostupná na:
 
